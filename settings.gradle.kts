@@ -1,1 +1,1 @@
-rootProject.name = "ChallengeAPI"
+rootProject.name = "challengeapi"
