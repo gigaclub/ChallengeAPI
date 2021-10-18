@@ -22,18 +22,6 @@ configure<JavaPluginConvention> {
 
 repositories {
     mavenCentral()
-    maven {
-        name = "GitHubPackages"
-        url = uri("https://maven.pkg.github.com/gigaclub/baseapi")
-        metadataSources {
-            mavenPom()
-            artifact()
-        }
-        credentials {
-            username = System.getenv("GITHUB_PACKAGES_USERID")
-            password = System.getenv("GITHUB_PACKAGES_IMPORT_TOKEN")
-        }
-    }
 }
 
 val sourcesJar by tasks.creating(Jar::class) {
